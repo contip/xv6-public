@@ -7,6 +7,12 @@
 #include "mmu.h"
 #include "proc.h"
 
+
+int sys_getsyscallinfo(void)
+{
+    return myproc()->num_calls;
+}
+
 int
 sys_fork(void)
 {
