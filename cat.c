@@ -24,7 +24,6 @@ cat(int fd)
 int
 main(int argc, char *argv[])
 {
-  printf(1, "number of system calls made: %d\n", getsyscallinfo());
   int fd, i;
 
   if(argc <= 1){
@@ -40,6 +39,5 @@ main(int argc, char *argv[])
     cat(fd);
     close(fd);
   }
-  printf(1, "number of system calls made: %d\n", getsyscallinfo());
   exit();
 }
